@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colombia Campesina</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Colombia Campesina</h1>
+        <p>By Leonardo Mosquera Rodríguez Diseño de Interfaces NRC-443</p>
+        <div class="accessibility-controls">
+            <button onclick="toggleHighContrast()">Cambiar Contraste</button>
+        </div>
+    </header>
+    
+    <div class="hero-section">
+        <h1 class="marquee">Discover the richness of campesino life in Colombia</h1>
+    </div>
+
+    <nav>
+        <button class="tab" onclick="showSection('crops')">Cultivos</button>
+        <button class="tab" onclick="showSection('regions')">Regiones</button>
+        <button class="tab" onclick="showSection('events')">Eventos</button>
+    </nav>
+
+    <div class="container">
+        <!-- Crops Section -->
+        <div class="content-section" id="crops">
+            <h2>¿Qué cultivamos en Colombia?</h2>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Cafe</h3>
+                    <p class="coffee-text">
+                        El café de Colombia es famoso en todo el mundo por su excepcional sabor y el inconfundible aroma suave pero rico que emana de cada preparación. Esta calidad distintiva ha convertido al café colombiano en un favorito tanto entre los conocedores del café como entre los bebedores ocasionales. La combinación de condiciones de cultivo ideales, que incluyen el diverso clima y la altitud del país, contribuye a las características únicas de los granos.
+                        El café colombiano se cultiva principalmente en las regiones montañosas, donde el rico suelo volcánico y la óptima cantidad de lluvia crean un entorno perfecto para que las plantas de café prosperen. Los métodos de cultivo cuidadosos empleados por los agricultores colombianos, conocidos como campesinos, garantizan que solo se cosechen los granos de la más alta calidad. Estos agricultores a menudo recurren a técnicas tradicionales que se han transmitido a lo largo de generaciones, resaltando la profunda herencia cultural asociada con la producción de café en Colombia.
+                    </p>
+                </div>
+                <aside>
+                    <img src="images/Woman-picking-Colombian-coffee.jpg" alt="Coffee Plant" class="coffee-img" id="cafe" />
+                </aside>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Flores</h3>
+                    <p class="flowers-text">
+                        Colombia es uno de los países más biodiversos del planeta, y la respuesta radica en su geografía única. Situada en la zona ecuatorial, Colombia cuenta con una variedad impresionante de paisajes y climas que van desde selvas tropicales hasta montañas nevadas, pasando por valles, llanuras y costas tanto en el Océano Atlántico como en el Pacífico. Esta diversidad geográfica ha permitido el desarrollo de una enorme cantidad de ecosistemas, lo que convierte al país en el hogar de miles de especies de plantas y animales que no se encuentran en ninguna otra parte del mundo.
+                        Dentro de esta biodiversidad, las flores de Colombia se han convertido en un símbolo cultural de gran importancia. Gracias a su ubicación geográfica privilegiada y a las condiciones climáticas favorables, Colombia es uno de los principales productores y exportadores de flores a nivel global. Regiones como Antioquia, Cundinamarca y Boyacá son famosas por sus plantaciones de rosas, claveles y orquídeas, que florecen durante todo el año debido a la estabilidad del clima. Las orquídeas, en particular, son un emblema nacional y representan la rica flora del país, con más de 4,000 especies diferentes, algunas de las cuales son endémicas de Colombia.
+                    </p>
+                </div>
+                <aside>
+                    <img src="images/orquidea-1.png" class="coffee-img" alt="Colombian Flowers" id="flores" />
+                </aside>
+            </div>
+        </div>
+
+        <!-- Regions Section -->
+        <div class="content-section" id="regions">
+            <h2>Regiones de Colombia</h2>
+            <p>Regiones de Colombia donde más se cultiva:</p>
+            <ul class="regions-list">
+                <li>Antioquia</li>
+                <li>Caldas</li>
+                <li>Quindío</li>
+                <li>Valle del Cauca</li>
+            </ul>
+            <button onclick="showMap()">Show Map</button>
+            <div id="map" class="map-container" style="display:none;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032134.3768767228!2d-74.62591547577682!3d5.8538672822064095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e69a475f890a283%3A0xffe1255b64bc9ff7!2zQm95YWPDoQ!5e0!3m2!1ses!2sco!4v1729387906897!5m2!1ses!2sco" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Events Section -->
+        <div class="content-section" id="events">
+            <h2>Próximos eventos</h2>
+            <div class="card">
+                <h3>Feria de las flores Medellín</h3>
+                <p>La Feria de las Flores de Medellín es uno de los eventos culturales más importantes a nivel nacional, porque en él se salvaguarda el patrimonio inmaterial silletero y las tradiciones antioqueñas. Además, posibilita el encuentro social por su amplia, incluyente y variada programación que desde 1957, año tras año, cautiva a turistas y locales.</p>
+            </div>
+            <div class="card">
+                
+               
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Axn0KCSyFs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accessibility Menu -->
+    <div class="accessibility-menu">
+        <h2>Accessibility Options</h2>
+        <ul>
+            <li>
+                <img src="images/zoomin.png" alt="Zoom In" />
+                <button onclick="zoomIn()">Zoom In</button>
+            </li>
+            <li>
+                <img src="images/search_10024224.png" alt="Zoom Out" />
+                <button onclick="zoomOut()">Zoom Out</button>
+            </li>
+            <li>
+                <img src="images/audio_9279228.png" alt="Text to Speech" />
+                <button onclick="readText()">Text to Speech</button>
+            </li>
+            <li>
+                <img src="images/font-size_11620681.png" alt="Change Font Size" />
+                <button onclick="changeFontSize()">Change Font Size</button>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Colombia Campesina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

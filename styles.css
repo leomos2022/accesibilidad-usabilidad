@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+    color: #333;
+    font-size: 16px; 
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    text-align: center;
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 60vh; 
+    background-image: url('images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+.coffee-text  {
+    text-align: left;
+}
+.flowers-text{
+    text-align: left;
+}
+aside {
+    /* Estilo del aside */
+    margin: 20px; /* Espacio alrededor del aside */
+    text-align: center; /* Centrar contenido si es necesario */
+}
+
+.coffee-img {
+    width: 100%; /* Ajustar la imagen al 100% del ancho del contenedor */
+    max-width: 300px; /* Ancho máximo para la imagen */
+    height: auto; /* Mantener la relación de aspecto */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.marquee {
+    position: absolute;
+    white-space: nowrap;
+    color: white; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); 
+    font-size: 10rem; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+}
+
+.tab {
+    margin: 0 10px;
+    padding: 15px 20px; 
+    cursor: pointer;
+    background-color: #48080b; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.tab:hover {
+    background-color: #848464; 
+    transform: scale(1.05); 
+}
+
+.container {
+    padding: 20px;
+
+   
+}
+h2 {
+    text-align: center;
+}
+.content-section {
+    display:flex; 
+    margin: 20px 0; 
+    align-items: center;
+    flex-direction: column;
+}
+.regions-list {
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.regions-list li {
+    display: inline-block; 
+    margin: 0 15px; 
+}
+
+.map-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.map-container iframe {
+    max-width: 100%; 
+    width: 600px; 
+    height: 450px; 
+    border: 0; 
+}
+
+#crops {
+    display: block; 
+}
+
+.card {
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    margin: 20px; 
+    padding: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s; 
+    text-align: center; 
+    color: black;
+}
+.card h3 {
+    margin-bottom: 10px;       /* Space between heading and paragraph */
+    font-size: 1.5em;          /* Adjust font size of the heading */
+    color: #333;               /* Optional: change color of heading */
+}
+
+.card p {
+    margin: 0;                 /* Remove default margin from paragraph */
+    line-height: 1.5;          /* Increase line height for readability */
+}
+
+.card-content {
+    flex: 1; 
+    padding: 20px; 
+}
+
+aside {
+    flex-shrink: 0; 
+    margin-left: 20px; 
+}
+
+aside img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.footer {
+    text-align: center;
+}
+.video-container {
+    display: flex;               /* Use Flexbox for alignment */
+    justify-content: center;     /* Center the video horizontally */
+    align-items: center;         /* Center the video vertically */
+    margin: 20px auto;          /* Center the container and add margin */
+    width: 100%;                 /* Set width to 100% of the parent container */
+    max-width: 800px;           /* Set a maximum width for larger screens */
+    height: 450px;              /* Set height for the video container */
+}
+
+.video-container iframe {
+    width: 100%;                /* Make iframe take full width of the container */
+    height: 100%;               /* Set height to fill the container */
+    border: none;               /* Remove default border */
+}
+
+
+
+
+.accessibility-menu {
+    position:absolute; 
+    top: 20%; 
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    padding: 15px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    width: 200px; 
+    z-index: 1000; 
+}
+
+.accessibility-menu h2 {
+    font-size: 1.5rem; 
+    text-align: center;
+}
+
+.accessibility-menu ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.accessibility-menu li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+.accessibility-menu img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+.high-contrast {
+    background-color: black; 
+    color: white; 
+}
+
+.high-contrast header,
+.high-contrast footer {
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+.high-contrast .tab {
+    background-color: yellow; 
+    color: black; 
+}
+
+.high-contrast .hero-section {
+    background-image: url('/images/campesino.jpg'); 
+    filter: brightness(0.7); 
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+    }
+
+    .tab {
+        width: 100%; 
+        margin: 5px 0; 
+    }
+
+    .card {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    aside {
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+}
