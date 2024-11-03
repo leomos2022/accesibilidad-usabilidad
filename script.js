@@ -75,11 +75,23 @@ function showMap() {
     }
 }
 
-// Other existing functions (toggleHighContrast, zoomIn, zoomOut, readText, changeFontSize) go here...
+function searchContent() {
+    const query = document.getElementById('search').value.toLowerCase();
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        const text = section.innerText.toLowerCase();
+        section.style.display = text.includes(query) ? 'block' : 'none';
+    });
+}
+function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    if (username && password) {
+        alert("Inicio de sesión exitoso");
+    } else {
+        alert("Por favor, ingresa un nombre de usuario y contraseña válidos.");
+    }
+}
 
 
-// Other existing functions (toggleHighContrast, zoomIn, zoomOut, readText, changeFontSize) go here...
 
-// Other existing functions (toggleHighContrast, zoomIn, zoomOut, readText, changeFontSize) go here...
-
-// Other existing functions (toggleHighContrast, zoomIn, zoomOut, readText, changeFontSize) go here...
