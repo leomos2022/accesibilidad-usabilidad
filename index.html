@@ -8,10 +8,72 @@
 </head>
 <body>
     <header>
+        <div class="top-navigation">
+            <nav class="main-nav">
+                <div class="dropdown">
+                    <button class="nav-link">Frutas</button>
+                    <div class="dropdown-content">
+                        <a href="#">Mango</a>
+                        <a href="#">Piña</a>
+                        <a href="#">Papaya</a>
+                        <a href="#">Curuba</a>
+                        <a href="#">Guanábana</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="nav-link">Verduras</button>
+                    <div class="dropdown-content">
+                        <a href="#">Tomate</a>
+                        <a href="#">Cebolla</a>
+                        <a href="#">Zanahoria</a>
+                        <a href="#">Pimentón</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="nav-link">Granos</button>
+                    <div class="dropdown-content">
+                        <a href="#">Maíz</a>
+                        <a href="#">Arroz</a>
+                        <a href="#">Frijol</a>
+                        <a href="#">Trigo</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="nav-link">Oleaginosas</button>
+                    <div class="dropdown-content">
+                        <a href="#">Palma de aceite</a>
+                        <a href="#">Semillas oleaginosas</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="nav-link">Otros</button>
+                    <div class="dropdown-content">
+                        <a href="#">Café</a>
+                        <a href="#">Cacao</a>
+                        <a href="#">Algodón</a>
+                        <a href="#">Tabaco</a>
+                        <a href="#">Ajonjolí</a>
+                        <a href="#">Maní</a>
+                        <a href="#">Uva</a>
+                        <a href="#">Soja</a>
+                        <a href="#">Cítricos</a>
+                        <a href="#">Fique</a>
+                        <a href="#">Panela</a>
+                        <a href="#">Productos forestales</a>
+                        <a href="#">Camarones</a>
+                    </div>
+                </div>
+                <div class="search-menu">
+                    <input type="text" id="search" placeholder="Buscar..." onkeyup="searchContent()" />
+                    <button class="dropdown-button">Buscar</button>
+                </div>
+            </nav>
+        </div>
         <h1>Bienvenido a la Colombia Campesina</h1>
-        <p>By Leonardo Mosquera Rodríguez Diseño de Interfaces NRC-443</p>
-        <div class="accessibility-controls">
+        
+ <div class="accessibility-controls">
             <button onclick="toggleHighContrast()">Cambiar Contraste</button>
+           
         </div>
     </header>
     
@@ -31,7 +93,7 @@
             <h2>¿Qué cultivamos en Colombia?</h2>
             <div class="card">
                 <div class="card-content">
-                    <h3>Cafe</h3>
+                    <h3>Café</h3>
                     <p class="coffee-text">
                         El café de Colombia es famoso en todo el mundo por su excepcional sabor y el inconfundible aroma suave pero rico que emana de cada preparación. Esta calidad distintiva ha convertido al café colombiano en un favorito tanto entre los conocedores del café como entre los bebedores ocasionales. La combinación de condiciones de cultivo ideales, que incluyen el diverso clima y la altitud del país, contribuye a las características únicas de los granos.
                         El café colombiano se cultiva principalmente en las regiones montañosas, donde el rico suelo volcánico y la óptima cantidad de lluvia crean un entorno perfecto para que las plantas de café prosperen. Los métodos de cultivo cuidadosos empleados por los agricultores colombianos, conocidos como campesinos, garantizan que solo se cosechen los granos de la más alta calidad. Estos agricultores a menudo recurren a técnicas tradicionales que se han transmitido a lo largo de generaciones, resaltando la profunda herencia cultural asociada con la producción de café en Colombia.
@@ -119,6 +181,23 @@
             </li>
         </ul>
     </div>
+    <section class="auth-section">
+        <h2>Regístrate o Inicia Sesión</h2>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn-register">Registrar</button>
+                <button type="button" onclick="login()">Iniciar Sesión</button>
+            </div>
+        </form>
+    </section>
 
     <footer class="footer">
         <p>&copy; 2024 Colombia Campesina</p>
